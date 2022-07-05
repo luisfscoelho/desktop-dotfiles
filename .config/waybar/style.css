@@ -1,0 +1,44 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Roboto, "Font Awesome 5 Free";
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #0b0d0f;
+    color: #f8f8f2;
+}
+
+tooltip {
+    background: #282a36;
+    border: 1px solid #f8f8f2;
+}
+
+tooltip label {
+    color: #f8f8f2;
+}
+
+#workspaces button {
+    padding: 4px;
+}
+#workspaces button.focused {
+    background: #282a36;
+    color: #50fa7b;
+    font-weight: bold;
+}
+
+#mode, #clock, #pulseaudio, #idle_inhibitor, #custom-power {
+    padding: 0 8px;
+}
+
+#mode {
+    background: #282a36;
+    border-bottom: 3px solid #f8f8f2;
+}
+
+#idle_inhibitor.activated {
+  color: #50fa7b;
+}
+

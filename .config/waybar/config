@@ -1,0 +1,56 @@
+{
+    "layer": "top",
+    "ipc": true,
+    "id": "bar-0",
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "temperature", "idle_inhibitor", "custom/power"],
+    "clock": {
+        "format": "{:%a, %Y %b %d, %H:%M}"
+    },
+    "pulseaudio": {
+        "format": "{volume} {icon} {format_source}",
+        "format-bluetooth": "{volume} {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}  ",
+        "format-source-muted": "{volume} ",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""],
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol"
+    },
+    /* "custom/media": {
+      "format": "{icon} {}",
+      "escape": true,
+      "return-type": "json",
+      "max-length": 40,
+      "on-click": "playerctl play-pause",
+      "on-click-right": "playerctl stop",
+      "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null",
+    } */
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "temperature": {
+      // "thermal-zone": 2,
+      // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+      // "critical-threshold": 80,
+      // "format-critical": "{temperatureC}°C ",
+      "format": "{temperatureC}°C "
+    },
+    "custom/power": {
+        "format": "⏻",
+        "on-click": "swaynag -t warning -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Suspend' 'systemctl suspend' -b 'Restart' 'shutdown -r now' -b 'Shutdown' 'shutdown -h now'"
+    }
+}

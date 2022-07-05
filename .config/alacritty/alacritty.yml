@@ -1,0 +1,25 @@
+import:
+  - ~/.config/alacritty/dracula.yml
+
+font:
+  normal:
+    family: firaCode Nerd Font
+    style: Regular
+
+  bold:
+    family: firaCode Nerd Font
+    style: Bold
+
+  italic:
+    family: firaCode Nerd Font
+    style: Italic
+
+  bold_italic:
+    family: firaCode Nerd Font
+    style: Bold Italic
+
+  size: 12
+
+key_bindings:
+  - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
+

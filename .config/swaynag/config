@@ -1,0 +1,15 @@
+font=Monospace 12
+message-padding=4
+button-padding=4
+edge=top
+button-border-size=0
+button-gap=8
+button-dismiss-gap=12
+
+[warning]
+background=ffb86c
+border=ffb86c
+text=282a36
+button-background=f8f8f2
+border-bottom=ffb86c
+
