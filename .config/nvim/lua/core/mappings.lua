@@ -92,12 +92,12 @@ map("n", "<leader>d",  '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>')
 map("n", "<leader>fm", '<cmd>lua vim.lsp.buf.formatting()<CR>')
 
 -- trouble
-map("n", "<leader>xx", "TroubleToggle<cr>")
-map("n", "<leader>xw", "TroubleToggle workspace_diagnostics<cr>")
-map("n", "<leader>xd", "TroubleToggle document_diagnostics<cr>")
-map("n", "<leader>xq", "TroubleToggle quickfix<cr>")
-map("n", "<leader>xl", "TroubleToggle loclist<cr>")
-map("n", "gR", "TroubleToggle lsp_references<cr>")
+map("n", "<leader>xx", ":TroubleToggle<cr>")
+map("n", "<leader>xw", ":TroubleToggle workspace_diagnostics<cr>")
+map("n", "<leader>xd", ":TroubleToggle document_diagnostics<cr>")
+map("n", "<leader>xq", ":TroubleToggle quickfix<cr>")
+map("n", "<leader>xl", ":TroubleToggle loclist<cr>")
+map("n", "gR", ":TroubleToggle lsp_references<cr>")
 
 -- spell
 map("n", "<leader>zz", ":set spell! <CR>")

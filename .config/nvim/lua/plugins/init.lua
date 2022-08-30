@@ -35,4 +35,6 @@ return packer.startup(function()
   use {"windwp/nvim-autopairs"}
   use {"terrortylor/nvim-comment"}
   use {"kyazdani42/nvim-tree.lua"}
+
+  use { 'brendalf/mix.nvim' }
 end)
