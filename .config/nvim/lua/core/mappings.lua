@@ -89,7 +89,7 @@ map("n", "ge",         '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>'
 map("n", "[d",         '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>')
 map("n", "]d",         '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>')
 map("n", "<leader>d",  '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>')
-map("n", "<leader>fm", '<cmd>lua vim.lsp.buf.formatting()<CR>')
+map("n", "<leader>fm", '<cmd>lua vim.lsp.buf.format()<CR>')
 
 -- trouble
 map("n", "<leader>xx", ":TroubleToggle<cr>")
