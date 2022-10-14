@@ -1,0 +1,41 @@
+window {
+  margin: 8px;
+  border: 2px solid #6272a4;
+  background-color: #282a36;
+  font-size: 20px;
+}
+
+#input {
+  margin: 8px;
+  padding: 4px 16px;
+  border: 2px solid #6272a4;
+  background-color: #282a36;
+}
+
+#inner-box {
+  margin: 8px;
+  background-color: #44475a;
+  border: none;
+}
+
+#outer-box {
+  margin: 8px;
+  border: 2px solid #282a36;
+}
+
+#text {
+  padding: 4px;
+}
+
+#entry:selected {
+  background-color: #8be9fd;
+  color: #282a36;
+  border: none;
+}
+
+#text:selected {
+  background-color: #8be9fd;
+  color: #282a36;
+  border: none;
+}
+
